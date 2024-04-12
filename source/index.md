@@ -1,3 +1,9 @@
+---
+html_theme.sidebar_secondary.remove:
+sd_hide_title: true
+html_sidebars.remove: true
+---
+
 # Brightway LCA Software Framework
 
 ## What is Brightway
@@ -48,7 +54,6 @@ content/examples/index
 content/faq/index
 content/contributing/index
 content/contact/contact
-api/index
 
 content/changelog/index
 content/other/ecosystem

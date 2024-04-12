@@ -33,7 +33,7 @@ extensions = [
     # Jupyter Notebook support
     'myst_nb',
     # API documentation support
-    'autoapi',
+    #'autoapi',
     # responsive web component support
     'sphinx_design',
     # custom 404 page
@@ -75,10 +75,7 @@ html_css_files = [
 ]
 
 html_sidebars = {
-    "**": [
-        "search-field.html",
-        "sidebar-nav-bs.html",
-    ],
+    "index": [],
 }
 
 html_theme_options = {
@@ -90,12 +87,11 @@ html_theme_options = {
     },
     # page elements
     "navbar_start": ["navbar-logo", "version-switcher"],
-    "navbar_end": ["navbar-icon-links.html"],
-    "navbar_persistent": ["theme-switcher"],
+    "navbar_end": ["theme-switcher", "navbar-icon-links.html"],
     "footer_start": ["copyright"],
     "footer_end": ["footer"],
-    "secondary_sidebar_items": ["page-toc", "edit-this-page", "sourcelink", "support"],
-    "header_links_before_dropdown": 7,
+    "secondary_sidebar_items": ["page-toc", "searchbox", "edit-this-page", "sourcelink", "support"],
+    "header_links_before_dropdown": 4,
     # page elements content
     "icon_links": [
         {
@@ -167,12 +163,12 @@ notfound_context = {
 # autoapi Configuration ################################################
 # https://sphinx-autoapi.readthedocs.io/en/latest/reference/config.html#customisation-options
 
-autoapi_dirs = [
-    '../brightway2-io/bw2io',
-    '../brightway2-data/bw2data',
-    '../brightway2-calc/bw2calc',
-    '../brightway2-analyzer/bw2analyzer'
-]
+#autoapi_dirs = [
+#    '../brightway2-io/bw2io',
+#    '../brightway2-data/bw2data',
+#    '../brightway2-calc/bw2calc',
+#    '../brightway2-analyzer/bw2analyzer'
+#]
 
 autoapi_ignore = [
     '*/data/*',
