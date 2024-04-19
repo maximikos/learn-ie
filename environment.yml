@@ -16,7 +16,7 @@ dependencies:
     # build process
     - sphinx-autobuild==2021.3.14 # live-html support # https://anaconda.org/conda-forge/sphinx-autobuild/files
     # theme and extensions
-    - pydata-sphinx-theme=0.15.2 # website theme # https://anaconda.org/conda-forge/pydata-sphinx-theme/files
+    - pydata-sphinx-theme==0.15.2 # website theme # https://anaconda.org/conda-forge/pydata-sphinx-theme/files
     - myst-parser==2.0.0 # Markdown support # https://anaconda.org/conda-forge/myst-parser/files
     - myst-nb==1.0.0 # Jupyter notebook support # https://anaconda.org/conda-forge/myst-nb/files
     - graphviz==9.0.0 # for plotting dependency diagrams with sphinx-autoapi # https://anaconda.org/conda-forge/graphviz/files
