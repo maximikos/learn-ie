@@ -27,6 +27,7 @@ jobs:
           conda list
       - name: Sphinx build
         run: |
+          conda activate sphinx_documentation
           sphinx-build source _build/html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
