@@ -14,18 +14,17 @@ jobs:
       - name: Make conda environment
         uses: conda-incubator/setup-miniconda@v3
         with:
-          activate-environment: sphinx_documentation
           python-version: 3.11
           environment-file: environment.yml    # Path to the documentation conda environment
           channels: conda-forge,defaults
           channel-priority: strict          
           show-channel-urls: true
           #auto-update-conda: false
-          #auto-activate-base: false
-      - name: Conda info
-        run: conda info
-      - name: Conda list
-        run: conda list
+          auto-activate-base: false
+          activate-environment: sphinx_documentation
+      - run: |
+        conda info
+        conda list
       - name: Sphinx build
         run: |
           sphinx-build source _build/html
