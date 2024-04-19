@@ -20,6 +20,10 @@ jobs:
           auto-update-conda: false
           auto-activate-base: false
           show-channel-urls: true #- name: Install dependencies
+      - name: Conda info
+        run: conda info
+      - name: Conda list
+        run: conda list
       - name: Sphinx build
         run: |
           sphinx-build source _build/html
