@@ -17,6 +17,8 @@ jobs:
           activate-environment: sphinx_documentation
           python-version: 3.11
           environment-file: environment.yml    # Path to the documentation conda environment
+          channels: conda-forge,defaults
+          channel-priority: strict
           auto-update-conda: false
           auto-activate-base: false
           show-channel-urls: true #- name: Install dependencies
