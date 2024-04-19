@@ -15,20 +15,18 @@ jobs:
         uses: conda-incubator/setup-miniconda@v3
         with:
           python-version: 3.11
-          environment-file: environment.yml    # Path to the documentation conda environment
+          environment-file: ./environment.yml    # Path to the documentation conda environment
           channels: conda-forge,defaults
           channel-priority: strict          
           show-channel-urls: true
           #auto-update-conda: false
-          auto-activate-base: false
-          activate-environment: sphinx_documentation
+          #auto-activate-base: false
+          #activate-environment: sphinx_documentation
       - run: |
           conda info
           conda list
       - name: Sphinx build
         run: |
-          conda init
-          conda activate sphinx_documentation
           sphinx-build source _build/html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
