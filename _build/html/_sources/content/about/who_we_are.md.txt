@@ -10,15 +10,6 @@ authors:
       - writing
       - editing, review
       - validation
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
 ---
 
 # Who we are
