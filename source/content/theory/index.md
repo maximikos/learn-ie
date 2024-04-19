@@ -16,12 +16,12 @@ If you have questions that the documentation cannot answer, you can [get in touc
 ```{toctree}
 ---
 hidden: true
-maxdepth: 2
+maxdepth: 3
 ---
-self
-lca
+history/index
+concepts/index
+methods/index
 structure
-io
 uncertainty
 graph_traversal
 static_and_stochastic_lca

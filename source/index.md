@@ -1,46 +1,74 @@
 ---
 html_theme.sidebar_secondary.remove:
 sd_hide_title: true
-html_sidebars.remove: true
+#html_sidebars.remove: true
 ---
 
-# Brightway LCA Software Framework
+<!-- CSS overrides on the homepage only -->
+<style>
+.bd-main .bd-content .bd-article-container {
+  max-width: 70rem; /* Make homepage a little wider instead of 60em */
+}
+/* Extra top/bottom padding to the sections */
+article.bd-article section {
+  padding: 2rem 0 8rem;
+}
+/* Override all h1 headers except for the hidden ones */
+h1:not(.sd-d-none) {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+/* Override all h3 headers that are not in hero */
+h3:not(#hero h3) {
+  font-weight: bold;
+  text-align: center;
+}
+</style>
 
-## What is Brightway
+# IEP: Industrial Ecology Platform for sustainability literacy
 
-Brightway is an open-source software package for life cycle assessment (LCA) and environmental impact assessment written in the Python programming language. LCA is a method for evaluating the environmental impacts of a product, process, or service. It involves analyzing all of the inputs and outputs of a system, including raw materials, energy use, and waste products, and quantifying the environmental impacts of these inputs and outputs over the entire lifecycle of the system.
+<div id="hero-writer">
+    <div class="wrapper">
+        <span class="first-text">What is</span>
+        <ul class="sec-texts">
+            <li><span><a href="content/theory/methods/lca.html">life cycle assessment?</a></span></li>
+            <li><span><a href="content/theory/methods/lca.html">Norway's carbon footprint?</a></span></li>
+            <li><span><a href="content/theory/methods/lca.html">socio-economic metabolism?</a></span></li>
+            <li><span><a href="content/theory/methods/lca.html">the impact of recycling?</a></span></li>
+        </ul>
+    </div>
+</div>
 
-Brightway is designed to make it easy to work with large datasets and perform LCA calculations quickly and accurately. It thus provides a powerful tool for anyone interested in performing LCA or evaluating the environmental impacts of products and processes. Brightway is not intended to replace software like _SimaPro_ or _OpenLCA_, but instead offers possibilities to break the limits of conventional LCA. Brightway is especially attractive for researchers, especially when used with [Jupyter notebooks](https://jupyter.org/).
+<div id="hero">
 
-## How can I learn Brightway?
+<div id="hero-left">  <!-- Start Hero Left -->
+  <h2 style="font-size: 60px; font-weight: bold; margin: 2rem auto 0;">IEP</h2>
+  <h3 style="font-weight: bold; margin-top: 0;">The Industrial Ecology Platform for sustainability literacy</h3>
+  <p>We open the box of sustainability assessment methods and insights to the broader public, including hopefully YOU.</p>
 
-::::{grid} 1 1 3 3
-:gutter: 3
+<div class="homepage-button-container">
+  <div class="homepage-button-container-row">
+      <a href="./getting_started/index.html" class="homepage-button primary-button">Get Started</a>
+      <a href="./examples/index.html" class="homepage-button secondary-button">See Gallery</a>
+  </div>
+  <div class="homepage-button-container-row">
+      <a href="./api/index.html" class="homepage-button-link">See API Reference →</a>
+  </div>
+</div>
+</div>  <!-- End Hero Left -->
 
-:::{grid-item-card} 📚 Read the Docs!
+<div id="hero-right">  <!-- Start Hero Right -->
 
-Brightway has extensive documentation. This includes the theory of life-cycle assessment the the Brightway software framework.
-+++
-You are here!
-:::
+  <div style="text-align: center;">
+    <iframe src="https://giphy.com/embed/igsVfO6Sro82xBQP8I" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  </div>
 
-:::{grid-item-card} 👨‍🏫 Learn it!
-:link: https://learn.brightway.dev/
-:link-type: url
+<!-- grid ended above, do not put anything on the right of markdown closings -->
 
-Brightway has step-by-step tutorials for beginners and experts alike. Learn how to use Brightway to do life-cycle assessment.
-+++
-Learn more {fas}`arrow-right`
-:::
-
-:::{grid-item-card} 💻 Try it!
-:link: https://docs.brightway.dev/projects/live
-:link-type: url
-
-Brightway has a live demo in a JupyterLite development environment where you can try out Brightway without installing anything.
-+++
-Learn more {fas}`arrow-right`
-:::
+</div>  <!-- End Hero Right -->
+</div>  <!-- End Hero -->
 
 
 ```{toctree}
@@ -48,15 +76,11 @@ Learn more {fas}`arrow-right`
 hidden:
 maxdepth: 1
 ---
-content/installation/index
 content/theory/index
-content/examples/index
-content/faq/index
+content/insights/index
+content/resources/index
+
 content/contributing/index
 content/contact/contact
-
-content/changelog/index
-content/other/ecosystem
-content/other/support
-content/other/credits
+content/about/index
 ```

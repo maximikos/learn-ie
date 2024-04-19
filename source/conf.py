@@ -8,8 +8,8 @@ import os
 ### Project Information ###########################################################################
 ###################################################################################################
 
-project = 'Brightway'
-copyright = datetime.date.today().strftime("%Y") + ' Brightway Developers'
+project = 'IEP'
+copyright = datetime.date.today().strftime("%Y") + ' International Society for Industrial Ecology'
 version: str = 'latest' # required by the version switcher
 
 ###################################################################################################
@@ -49,6 +49,7 @@ html_static_path = ['_static']
 templates_path = ['_templates']
 exclude_patterns = ['_build']
 html_theme = "pydata_sphinx_theme"
+html_logo = "_static/logo/nemora_logo_small.png"
 
 suppress_warnings = [
     "myst.header" # suppress warnings of the kind "WARNING: Non-consecutive header level increase; H1 to H3"
@@ -79,7 +80,7 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    "announcement": "<p><a href='https://www.d-d-s.ch/schools/may-24/index.html'>REGISTER NOW</a>: Brightway Spring School! 🇨🇦 Québec City (Canada) 🗓️ 20.-24. May 2024</p>",
+    #"announcement": "<p><a href='https://www.d-d-s.ch/schools/may-24/index.html'>REGISTER NOW</a>: Brightway Spring School! 🇨🇦 Québec City (Canada) 🗓️ 20.-24. May 2024</p>",
     # https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/version-dropdown.html
     "switcher": {
         "json_url": "https://raw.githubusercontent.com/brightway-lca/brightway-documentation/main/source/_static/switcher.json",
@@ -87,42 +88,31 @@ html_theme_options = {
     },
     # page elements
     "navbar_start": ["navbar-logo", "version-switcher"],
-    "navbar_end": ["theme-switcher", "navbar-icon-links.html"],
+    #"navbar_end": ["theme-switcher", "navbar-icon-links.html"],
+    "navbar_end": ["navbar-icon-links.html"],
     "footer_start": ["copyright"],
     "footer_end": ["footer"],
     "secondary_sidebar_items": ["page-toc", "searchbox", "edit-this-page", "sourcelink", "support"],
-    "header_links_before_dropdown": 4,
+    "header_links_before_dropdown": 3,
     # page elements content
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/brightway-lca",
+            "url": "https://github.com/maximikos",
             "icon": "fa-brands fa-github",
             "type": "fontawesome",
         },
-        {
-            "name": "Conda",
-            "url": "https://anaconda.org/cmutel/brightway25",
-            "icon": "fa-brands fa-python",
-            "type": "fontawesome",
-        },
-        {
-            "name": "Matrix Group Chat",
-            "url": "https://app.element.io/#/room/#brightway/community:matrix.org",
-            "icon": "fa-regular fa-comments",
-            "type": "fontawesome",
-        }
     ],
     # various settings
     "collapse_navigation": True,
     "show_prev_next": False,
     "use_edit_page_button": True,
     "navigation_with_keys": True,
-    "logo": {
-        "text": "Brightway",
-        "image_light": "BW_all_black_transparent_landscape.svg",
-        "image_dark": "BW_all_white_transparent_landscape.svg"
-    },
+    #"logo": {
+    #    "text": "IEP",
+    #    "image_light": "nemora_logo.png",
+    #    "image_dark": "logo/nemora_logo_small.png"
+    #},
 }
 
 # required by html_theme_options: "use_edit_page_button"
@@ -223,11 +213,6 @@ favicons = [
     {
         "rel": "icon",
         "sizes": "100x100",
-        "href": "logo/BW_favicon_100x100.png",
-    },
-    {
-        "rel": "apple-touch-icon",
-        "sizes": "500x500",
-        "href": "logo/BW_favicon_500x500.png"
+        "href": "logo/iep_favicon.ico",
     },
 ]
