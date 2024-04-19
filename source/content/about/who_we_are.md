@@ -21,46 +21,6 @@ kernelspec:
   name: python3
 ---
 
-<!--
-<h1>{{ .layout.title }}</h1>
-
-<h1>{{ .Layout.title }}</h1>
-
-<h1>{{ layout.title }}</h1>
-
-<h1>{{ Layout.title }}</h1>
-
-<h1>{{ content.title }}</h1>
-
-<h1>{{ Content.title }}</h1>
-
-{{ title }}
-
-{ title }
-
-hello {{ $.Page.title }}
-
-hello {{ $.Page.Param.title }}
-
-hello {{ $frontmatter.title }}
-
-{{ frontmatter.title }}
-
-{ frontmatter.title }
-
-{frontmatter.title}
-
-{{ about.title }}
-
-{% $frontmatter.title %}
-
-{{ params.title }}
-
-{{ .title }}
-
-{{ $.title }}
---->
-
 # Who we are
 
 > *Last edited by* <a href=”https://github.com/maximikos“><img src="https://github.com/maximikos.png" alt="GitHub user" title="Max Koslowski" width="40" style="border-radius: 50%" /></a> *on 05/11/2023*
