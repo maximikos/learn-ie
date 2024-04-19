@@ -42,23 +42,23 @@ hello {{ $.Page.title }}
 
 hello {{ $.Page.Param.title }}
 
-# hello {{ $frontmatter.title }}
+hello {{ $frontmatter.title }}
 
-# {{ frontmatter.title }}
+{{ frontmatter.title }}
 
 { frontmatter.title }
 
 {frontmatter.title}
 
-# {{ about.title }}
+{{ about.title }}
 
-# {% $frontmatter.title %}
+{% $frontmatter.title %}
 
-# {{ params.title }}
+{{ params.title }}
 
-# {{ .title }}
+{{ .title }}
 
-# {{ $.title }}
+{{ $.title }}
 --->
 
 # Who we are
